@@ -1,0 +1,20 @@
+group 'com.isoftware.testing'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter:+"
+    compile "org.springframework.boot:spring-boot-starter-data-jpa:+"
+    compile "com.h2database:h2:1.4.191"
+    compile "org.springframework.boot:spring-boot-starter-web:+"
+    testCompile "org.springframework.boot:spring-boot-starter-test:+"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
